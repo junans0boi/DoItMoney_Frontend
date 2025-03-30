@@ -1,0 +1,98 @@
+/* /src/pages/css/AssetTab.css */
+
+.asset-tab-container {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+
+  }
+  
+  .not-logged-in {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* 상단 요약 영역 */
+  .asset-summary {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .summary-item {
+    flex: 1;
+    border-right: 1px solid #eee;
+  }
+  
+  .summary-item:last-child {
+    border-right: none;
+  }
+  
+  .summary-item span:first-child {
+    display: block;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .summary-item span:last-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* 각 자산 섹션 */
+  .asset-section {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .asset-section h3 {
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .asset-section p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .asset-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .asset-section li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .asset-section li:last-child {
+    border-bottom: none;
+  }
+  
+  /* 총합 색상 */
+  .negative {
+    color: #f74d4d;
+  }
+  
+  .positive {
+    color: #008000;
+  }

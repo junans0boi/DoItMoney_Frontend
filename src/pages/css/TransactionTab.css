@@ -1,0 +1,150 @@
+/* /src/pages/AssetTab.css */
+
+.asset-tab-container {
+    position: relative;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding-bottom: 80px; /* 플로팅 버튼 등 하단 여유 */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  /* 상단 헤더 */
+  .asset-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    padding: 0 12px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .header-left,
+  .header-right {
+    flex: 0 0 auto;
+  }
+  
+  .header-center {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .header-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .header-subtitle {
+    font-size: 12px;
+    color: #999;
+    margin-top: 2px;
+  }
+  
+  /* 좌우 이동 버튼 */
+  .nav-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* 탭 영역 */
+  .asset-tabs {
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    justify-content: space-around;
+  }
+  
+  .tab-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+  }
+  .tab-item:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* 거래 리스트 */
+  .transaction-list {
+    padding: 8px;
+  }
+  
+  /* 날짜 헤더 (예: 11 | 월요일 | 20,000원) */
+  .date-row {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+  }
+  
+  .date-number {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+  
+  .day {
+    margin-right: auto;
+    color: #666;
+  }
+  
+  .income-amount {
+    margin-right: 10px;
+    color: #008000; /* 수입이면 초록색 예시 */
+  }
+  
+  .expense-amount {
+    margin-right: 10px;
+    color: #f74d4d; /* 지출이면 빨간색 예시 */
+  }
+  
+  .total-amount {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* 거래 상세 항목 (카테고리, 결제수단 등) */
+  .transaction-row {
+    display: flex;
+    align-items: center;
+    padding: 6px 0 8px 24px; /* 날짜 아래 들여쓰기 */
+    border-bottom: 1px dashed #eee;
+    font-size: 13px;
+    color: #555;
+  }
+  
+  .transaction-row .category {
+    margin-right: 12px;
+  }
+  
+  .transaction-row .method {
+    color: #999;
+  }
+  
+  /* 플로팅 버튼 (+) */
+  .floating-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 80px; /* 하단바가 있다면 조금 위로 */
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f74d4d;
+    color: #fff;
+    font-size: 28px;
+    line-height: 0;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+  }
+  .floating-btn:hover {
+    background-color: #ff6b6b;
+  }

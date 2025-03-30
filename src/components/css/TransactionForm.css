@@ -1,0 +1,192 @@
+/* /src/components/css/TransactionForm.css */
+
+.transaction-container {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding-top: 70px; /* 상단바가 있을 경우 간격 */
+  }
+  
+  /* 상단 탭 */
+  .transaction-tabs {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+  }
+  
+  .tab-btn {
+    flex: 1;
+    padding: 12px 0;
+    border: none;
+    background: none;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+  }
+  .tab-btn.active {
+    color: #f74d4d; /* 탭 활성화 시 강조색 */
+    border-bottom: 2px solid #f74d4d;
+    font-weight: bold;
+  }
+  
+  /* 폼 자체 */
+  .transaction-form {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  
+  /* 행(라벨 + 입력) */
+  .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    color: #333;
+    flex: 0 0 80px;
+    /* 라벨 폭을 고정 or min-width로 조절해도 됨 */
+  }
+  
+  .form-row input[type='date'],
+  .form-row input[type='number'],
+  .form-row input[type='text'] {
+    flex: 1;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* placeholder 색상 등 */
+  .form-row input::placeholder {
+    color: #ccc;
+  }
+  
+  /* 반복/할부 토글 스위치 */
+  .toggle-row {
+    justify-content: space-between;
+    border: none; /* 아래줄 없애고 싶으면 */
+  }
+  
+  /* iOS 스타일 스위치 */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider.round {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: .4s;
+  }
+  
+  .slider.round:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+  }
+  
+  .switch input:checked + .slider.round {
+    background-color: #f74d4d;
+  }
+  
+  .switch input:checked + .slider.round:before {
+    transform: translateX(18px);
+  }
+  
+  /* 추가입력 */
+  .additional-row {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    color: #f74d4d;
+    text-align: center;
+  }
+  
+  /* 버튼 섹션 */
+  .button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .save-btn,
+  .continue-btn {
+    flex: 1;
+    margin: 0 5px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .save-btn {
+    background-color: #ff7043; /* 예시 색상 (오렌지) */
+    color: #fff;
+  }
+  
+  .continue-btn {
+    background-color: #eee;
+    color: #333;
+  }
+  .btn{
+    width : 60px;
+  }
+  /* 플로팅 팝업 모달 스타일 */
+.account-form-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* 모달이 항상 위에 보이도록 */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 400px;
+}
+
+/* 모달 백드롭(반투명 배경) */
+.account-form-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+/* 모달 내 닫기 버튼 스타일 (원하는 경우) */
+.account-form-modal button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #f74d4d;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}

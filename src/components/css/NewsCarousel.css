@@ -1,0 +1,57 @@
+.news-carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    height: 300px; /* 슬라이더 높이 (필요에 따라 조절) */
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 각 슬라이드는 절대 위치에 놓고, active 슬라이드만 보임 */
+  .carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .carousel-slide.active {
+    opacity: 1;
+    position: relative;
+  }
+  
+  /* 슬라이드 이미지 스타일 */
+  .slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* 뉴스 제목, 스니펫 영역 (하단 오버레이) */
+  .slide-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 15px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    color: #fff;
+    box-sizing: border-box;
+  }
+  
+  .slide-content h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .slide-content p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
