@@ -68,17 +68,16 @@ DoitMoney_Frontend/
 │   └── index.js              # 애플리케이션 진입점
 └── package.json              # 프로젝트 의존성 및 스크립트 관리
 
-
+```
 
 ⸻
 
-12. 문의 및 연락
-
+## 7. 문의 및 연락
 프로젝트 관련 문의나 피드백은 아래 이메일로 연락 부탁드립니다.
-	•	고재형 (202045044)
-	•	이준환 (202045066)
-	•	Contact: junans0boi@gmail.com
+• 고재형 (202045044)
+• 이준환 (202045066)
+• Contact: junans0boi@gmail.com
 
 ⸻
 
-배포 주소: doitmoney.kro.kr
+# 배포 주소: doitmoney.kro.kr
